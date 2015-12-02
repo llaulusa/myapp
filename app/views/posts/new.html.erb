@@ -1,0 +1,15 @@
+<h1>Post#new</h1>
+<p>Find me in app/views/post/new.html.erb</p>
+<h1>New Post</h1>
+<%= form_for @post do |f| %>
+	<%=f.label :title %>:
+	<%= f.text_feild :title %>
+
+	<%=f.label :author %>:
+	<%= f.text_feild :author %>
+
+	<%=f.label :body %>:
+	<%= f.text_feild :body %>
+
+	<% f.submit %>
+<% end %>
